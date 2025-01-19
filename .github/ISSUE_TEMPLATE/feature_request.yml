@@ -1,0 +1,27 @@
+name: Feature Request
+description: 개발 예정 건에 대한 Issue Template
+labels: [feat]
+title: '[Feat]: '
+body:
+  - type: textarea
+    id: description
+    attributes:
+      description: 개발 예정 기능.
+      label: Description
+    validations:
+      required: true
+
+  - type: textarea
+    id: possible-solution
+    attributes:
+      label: Possible Solution
+      placeholder: I think this is probably...
+    validations:
+      required: false
+
+  - type: textarea
+    id: etc
+    attributes:
+      label: etc.
+    validations:
+      required: false
