@@ -2,7 +2,7 @@ group = "dev"
 version = "0.0.1-SNAPSHOT"
 
 plugins {
-	kotlin("jvm") version "1.9.25"
+	kotlin("jvm") version "2.1.0"
 	kotlin("plugin.spring") version "2.1.0"
 
 	id("org.springframework.boot") version "3.4.1"
