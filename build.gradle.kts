@@ -45,6 +45,23 @@ repositories {
 	mavenCentral()
 }
 
+tasks {
+	register<Copy>("initConfiguration") {
+		from("./CONFIG")
+		include("*.yml", "*.txt")
+		into("./src/main/resources")
+	}
+
+	test {
+		useJUnitPlatform()
+	}
+
+	processResources {
+		dependsOn("initConfiguration")
+	}
+}
+
+
 java {
 	toolchain {
 		languageVersion.set(JavaLanguageVersion.of(21))
