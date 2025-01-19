@@ -23,6 +23,13 @@ dependencies {
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
 	implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
 
+	// MySQL R2DBC
+	implementation("io.asyncer:r2dbc-mysql")
+
+	// Spring R2DBC
+	implementation("org.springframework.data:spring-data-commons")
+	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
+
 	// Test
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(module = "mockito-core")
